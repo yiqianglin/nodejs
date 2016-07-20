@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
+var routes = require('./routes/index');   //本地模组，功能是为指定路径组织返回内容，相当于MVC中的控制器
 var users = require('./routes/users');
 
 var app = express();
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/', routes);   //默认路由
 app.use('/users', users);
 
 // catch 404 and forward to error handler
