@@ -55,6 +55,9 @@ app.get('/questions/resolved', function(req, res){
         return q && q.state=='resolved'
     }))
 })
+app.get('/plainText', function(req, res){
+    res.status(200).send('hello i am a text')
+})
 
 
 
