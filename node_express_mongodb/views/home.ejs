@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p> Hello jikexueyuan </p>
+    <p> Hi <%=name%> </p>
+
+    <p> 下面是url参数转成的数据 </p>
+    <p> auth: <%=auth%> </p>
+
+    <input type="text" id="new-tmpl-val">
+    <p>下面是前端的模板</p>
+    <div id="container"></div>
+    <script type="text/javascript" src="/js/ejs.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+ <!--   <script>
+        //模拟ajax得到后台的模板
+        var tmpl = '<p>这里是插入的tmpl内容</p>';
+        var container = document.getElementById('container');
+        container.innerHTML = ejs.render(tmpl)
+    </script>   -->
+</body>
+</html>
